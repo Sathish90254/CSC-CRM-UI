@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSC CRM &mdash; Institute Management Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== TOP BAR ===================== -->
+<header class="topbar">
+  <div class="topbar-left">
+    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="brand">
+      <div class="brand-mark">CSC</div>
+      <div class="brand-text">
+        <span class="brand-title">CSC&nbsp;CRM</span>
+        <span class="brand-sub">Institute Operations Suite</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="topbar-right">
+    <div class="role-switcher">
+      <label for="roleSelect">Viewing as</label>
+      <select id="roleSelect"></select>
+    </div>
+    <div class="user-chip">
+      <div class="user-avatar" id="userAvatar">A</div>
+      <div class="user-meta">
+        <span class="user-name" id="userName">Admin User</span>
+        <span class="user-role" id="userRoleLabel">Admin</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="app-shell">
+
+  <!-- ===================== SIDEBAR ===================== -->
+  <aside class="sidebar" id="sidebar">
+    <nav class="sidebar-nav" id="sidebarNav" aria-label="Modules"></nav>
+    <div class="sidebar-footer">
+      <div class="sidebar-footer-line"></div>
+      <p>CSC Institute<br>Anna&nbsp;Nagar Campus</p>
+    </div>
+  </aside>
+
+  <!-- ===================== MAIN ===================== -->
+  <div class="main-area">
+
+    <!-- Inner module navbar -->
+    <nav class="module-navbar" id="moduleNavbar" aria-label="Section links"></nav>
+
+    <!-- Breadcrumb / page title -->
+    <div class="page-header" id="pageHeader"></div>
+
+    <!-- Dynamic content -->
+    <main class="content" id="content"></main>
+
+  </div>
+</div>
+
+<div class="sidebar-scrim" id="sidebarScrim"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
